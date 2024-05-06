@@ -1,0 +1,64 @@
+Bootstrap: docker
+
+#first choose a docker base image that includes CUDA.  Various python packages may only
+#support certain versions of CUDA, so check carefully.
+#FROM:  nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04
+#FROM: nvidia/cuda:10.2-cudnn7-devel-ubuntu18.04
+#FROM: nvidia/cuda:11.5.1-cudnn8-devel-ubuntu20.04
+#FROM: nvidia/cuda:11.5.1-cudnn8-runtime-ubuntu20.04
+FROM: nvidia/cuda:11.3.1-cudnn8-runtime-ubuntu20.04
+#FROM: nvidia/cuda:11.1.1-cudnn8-runtime-ubuntu18.04
+
+%setup
+
+%files
+
+#instructions executed while the container is being built, after the base container OS has been installed
+%post
+  . /environment
+  SHELL=/bin/bash
+  CPATH="/usr/local/cuda/include:$CPATH"
+  PATH="/usr/local/cuda/bin:/usr/local/cuda-11.3:$PATH"
+  LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
+  CUDA_HOME="/usr/local/cuda"
+  #update the linux distribution within the container
+  apt-get update
+  DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install tzdata
+  apt-get install -y wget git vim build-essential cmake libgtk2.0-0 python3.8 python3.8-dev python3.8-venv python3-distutils python3-apt libgtk-3-dev xauth curl 
+  wget https://bootstrap.pypa.io/pip/get-pip.py
+  python3.8 get-pip.py
+  #python3.6 -m ensurepip --upgrade
+  ln -s /usr/bin/python3.8 /usr/local/bin/python3
+  
+  #update pip
+  pip install --upgrade pip
+  pip install virtualenv
+
+  #download megolodon
+  pip install megalodon
+ 
+  #install Guppy
+  cd /home/
+  curl --user hongxuding@arizona.edu:Poulainding14 --output ./ont-guppy_6.0.6_linux64.tar.gz https://americas.oxfordnanoportal.com/software/analysis/ont-guppy_6.0.6_linux64.tar.gz
+  tar -xf ./ont-guppy_6.0.6_linux64.tar.gz
+  rm ./ont-guppy_6.0.6_linux64.tar.gz
+ 
+  #install minimap2
+  cd /home/
+  git clone https://github.com/lh3/minimap2
+  cd minimap2 && make
+
+#this section sets up the runtime environment within the container to be created
+%environment
+
+  # use bash as default shell
+  SHELL=/bin/bash
+
+  # add CUDA paths
+  CPATH="/usr/local/cuda/include:$CPATH"
+  PATH="/usr/local/cuda/bin:/usr/local/cuda-11.3:$PATH"
+  LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
+  CUDA_HOME="/usr/local/cuda"
+
+  export PATH LD_LIBRARY_PATH CPATH CUDA_HOME
+

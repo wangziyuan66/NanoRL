@@ -1,0 +1,5 @@
+./rawdata/m5c/batch_43.fast5
+./rawdata/m5c/batch_17.fast5
+./rawdata/m5c/batch_79.fast5
+./rawdata/m5c/batch_58.fast5
+./rawdata/m5c/batch_50.fast5
