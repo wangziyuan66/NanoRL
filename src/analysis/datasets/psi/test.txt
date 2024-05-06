@@ -1,0 +1,5 @@
+./rawdata/psi/3.fast5
+./rawdata/psi/10.fast5
+./rawdata/psi/9.fast5
+./rawdata/psi/8.fast5
+./rawdata/psi/6.fast5

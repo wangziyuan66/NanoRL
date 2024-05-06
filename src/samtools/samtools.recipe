@@ -1,0 +1,18 @@
+Bootstrap: docker
+
+From: python:latest
+
+%post
+  #update the linux distribution within the container
+  apt-get update
+  apt-get install -y git cmake
+
+  #install SAMTOOLS
+  cd /home/
+  wget https://github.com/samtools/samtools/releases/download/1.16/samtools-1.16.tar.bz2
+  tar -vxjf samtools-1.16.tar.bz2
+  cd samtools-1.16
+  make
+
+%environment
+  export PATH="$PATH:/home/samtools-1.16"

@@ -1,0 +1,5 @@
+./rawdata/hm5c/FAK48894_43a1e3f93ef6a715afcf5a6a7fa6826a8ddb0b98_4.fast5
+./rawdata/hm5c/FAK48894_43a1e3f93ef6a715afcf5a6a7fa6826a8ddb0b98_18.fast5
+./rawdata/hm5c/FAK48894_43a1e3f93ef6a715afcf5a6a7fa6826a8ddb0b98_20.fast5
+./rawdata/hm5c/FAK48894_43a1e3f93ef6a715afcf5a6a7fa6826a8ddb0b98_24.fast5
+./rawdata/hm5c/FAK48894_43a1e3f93ef6a715afcf5a6a7fa6826a8ddb0b98_25.fast5
