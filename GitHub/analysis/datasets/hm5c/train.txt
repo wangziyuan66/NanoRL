@@ -1,5 +1,0 @@
-./rawdata/hm5c/FAK48894_43a1e3f93ef6a715afcf5a6a7fa6826a8ddb0b98_6.fast5
-./rawdata/hm5c/FAK48894_43a1e3f93ef6a715afcf5a6a7fa6826a8ddb0b98_11.fast5
-./rawdata/hm5c/FAK48894_43a1e3f93ef6a715afcf5a6a7fa6826a8ddb0b98_14.fast5
-./rawdata/hm5c/FAK48894_43a1e3f93ef6a715afcf5a6a7fa6826a8ddb0b98_0.fast5
-./rawdata/hm5c/FAK48894_43a1e3f93ef6a715afcf5a6a7fa6826a8ddb0b98_1.fast5

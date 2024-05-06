@@ -1,5 +1,0 @@
-./rawdata/m1y/FAV42271_efadae79_47.fast5
-./rawdata/m1y/FAV42271_efadae79_20.fast5
-./rawdata/m1y/FAV42271_efadae79_24.fast5
-./rawdata/m1y/FAV42271_efadae79_38.fast5
-./rawdata/m1y/FAV42271_efadae79_27.fast5

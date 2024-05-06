@@ -1,5 +1,0 @@
-./rawdata/ac4c/batch_11.fast5
-./rawdata/ac4c/batch_91.fast5
-./rawdata/ac4c/batch_143.fast5
-./rawdata/ac4c/batch_174.fast5
-./rawdata/ac4c/batch_116.fast5
