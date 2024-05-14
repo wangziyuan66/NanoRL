@@ -7,16 +7,16 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
 <pre>
 ./NanoRL/
 |-- analysis
-|   |-- datasets ## train and test datasets used throughout NanoRL
+|   |-- datasets
 |   |   `-- canonical & 1ma & 6ma & ac4c & m5c & hm5c & m5u & psi & m1y ## modification groups
-|   |       |-- train.txt
-|   |       `-- test.txt
+|   |       |-- train.txt ## training datasets
+|   |       `-- test.txt ## test datasets used
 |   | 
-|   |-- general_embed ## individually and jointly-trained basecallers
+|   |-- general_embed
 |   |   |-- {canonical & 1ma & 6ma & ac4c & m5c & hm5c & m5u & psi & m1y}_train
-|   |   |   `-- run.slurm ## individual-training
+|   |   |   `-- run.slurm ## individually-trained basecallers
 |   |   `-- minus_{ac4c & psi & m1y}_train
-|   |       `-- run.slurm ## joint-trained
+|   |       `-- run.slurm ## jointly-trained basecallers
 |   | 
 |   `-- iterative_label ## ground-truth sequences created via iterative basecalling
 |       |-- guppy
@@ -29,21 +29,21 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
 |           `-- train.slurm ## model training
 |
 |-- reference
-|   |-- config.cfg ## guppy configuration file
+|   |-- config.cfg ## the guppy configuration file using during iterative basecalling
 |   `-- rna.fa ## reference sequences
 |
 |-- guppy_megalodon
-|   |-- guppy_megalodon.recipe
+|   |-- guppy_megalodon.recipe ## recipe for creating singularity container
 |   `-- guppy_models
-|       `-- rna_r9.4.1_70bps_hac.cfg
+|       `-- rna_r9.4.1_70bps_hac.cfg ## the original guppy configuration file
 |
 |-- samtools
 |   `-- samtools.recipe
 |
 `-- taiyaki
     |-- taiyaki_models
-    |   |-- mLstm_flipflop.py
-    |   `-- r941_rna_minion.checkpoint
+    |   |-- mLstm_flipflop.py ## model template
+    |   `-- r941_rna_minion.checkpoint ## taiyaki RNA model checkpoint
     `-- taiyaki.recipe
 </pre>
 
