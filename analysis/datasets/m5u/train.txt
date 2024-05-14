@@ -1,0 +1,5 @@
+./rawdata/m5u/batch8.fast5
+./rawdata/m5u/batch3.fast5
+./rawdata/m5u/batch6.fast5
+./rawdata/m5u/batch0.fast5
+./rawdata/m5u/batch1.fast5
