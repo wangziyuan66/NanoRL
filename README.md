@@ -18,15 +18,15 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
 |   |   `-- minus_{ac4c & psi & m1y}_train
 |   |       `-- run.slurm ## jointly-trained basecallers
 |   | 
-|   `-- iterative_label ## ground-truth sequences created via iterative basecalling
+|   `-- iterative_label
+|       |-- round{0 & 1 & 2 & 3 & 4} ## iterative basecalling for precisely resolving backbone sequences
+|       |   |-- basecall.slurm ## basecalling
+|       |   |-- hdf5.slurm ## training data preparation
+|       |   `-- train.slurm ## model training
 |       |-- guppy
-|       |    `-- basecall.slurm
-|       |-- iterate
-|       |   `-- basecall.slurm
-|       `-- round{0 & 1 & 2 & 3 & 4} ## basecalling iterations with training data
-|           |-- basecall.slurm ## basecalling
-|           |-- hdf5.slurm ## training data preparation
-|           `-- train.slurm ## model training
+|       |    `-- basecall.slurm ## test data basecalling with the original guppy model
+|       `-- iterate
+|           `-- basecall.slurm ## test data basecalling with the final iteration model
 |
 |-- reference
 |   |-- config.cfg ## the guppy configuration file using during iterative basecalling
