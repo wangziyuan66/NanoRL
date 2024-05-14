@@ -7,15 +7,15 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
 <pre>
 ./NanoRL/
 |-- analysis
-|   |-- datasets
-|   |   `-- 1ma & 6ma & ac4c & canonical & hm5c & m1y & m5c & m5u & psi
-|   |       |-- test.txt
-|   |       `-- train.txt
+|   |-- datasets ## train and test datasets used throughout NanoRL
+|   |   `-- canonical & 1ma & 6ma & ac4c & m5c & hm5c & m5u & psi & m1y
+|   |       |-- train.txt
+|   |       `-- test.txt
 |   | 
 |   |-- general_embed
-|   |   |-- {1ma & 6ma & ac4c & canonical & hm5c & m1y & m5c & m5u & psi}_train
+|   |   |-- {canonical & 1ma & 6ma & ac4c & m5c & hm5c & m5u & psi & m1y}_train
 |   |   |   `-- run.slurm
-|   |   `-- minus_{ac4c & m1y & psi}_train
+|   |   `-- minus_{ac4c & psi & m1y}_train
 |   |       `-- run.slurm
 |   | 
 |   `-- iterative_label
@@ -46,3 +46,4 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
     |   `-- r941_rna_minion.checkpoint
     `-- taiyaki.recipe
 </pre>
+
