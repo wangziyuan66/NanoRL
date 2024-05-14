@@ -10,7 +10,7 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
 |   |-- datasets
 |   |   `-- canonical & 1ma & 6ma & ac4c & m5c & hm5c & m5u & psi & m1y ## modification groups
 |   |       |-- train.txt ## training datasets
-|   |       `-- test.txt ## test datasets used
+|   |       `-- test.txt ## test datasets
 |   | 
 |   |-- general_embed
 |   |   |-- {canonical & 1ma & 6ma & ac4c & m5c & hm5c & m5u & psi & m1y}_train
