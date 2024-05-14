@@ -8,29 +8,29 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
 ./NanoRL/
 |-- analysis
 |   |-- datasets ## train and test datasets used throughout NanoRL
-|   |   `-- canonical & 1ma & 6ma & ac4c & m5c & hm5c & m5u & psi & m1y
+|   |   `-- canonical & 1ma & 6ma & ac4c & m5c & hm5c & m5u & psi & m1y ## modification groups
 |   |       |-- train.txt
 |   |       `-- test.txt
 |   | 
-|   |-- general_embed
+|   |-- general_embed ## individually and jointly-trained basecallers
 |   |   |-- {canonical & 1ma & 6ma & ac4c & m5c & hm5c & m5u & psi & m1y}_train
-|   |   |   `-- run.slurm
+|   |   |   `-- run.slurm ## individual-training
 |   |   `-- minus_{ac4c & psi & m1y}_train
-|   |       `-- run.slurm
+|   |       `-- run.slurm ## joint-trained
 |   | 
-|   `-- iterative_label
+|   `-- iterative_label ## ground-truth sequences created via iterative basecalling
 |       |-- guppy
 |       |    `-- basecall.slurm
 |       |-- iterate
 |       |   `-- basecall.slurm
-|       `-- round{0 & 1 & 2 & 3 & 4}
-|           |-- basecall.slurm
-|           |-- hdf5.slurm
-|           `-- train.slurm
+|       `-- round{0 & 1 & 2 & 3 & 4} ## basecalling iterations with training data
+|           |-- basecall.slurm ## basecalling
+|           |-- hdf5.slurm ## training data preparation
+|           `-- train.slurm ## model training
 |
 |-- reference
-|   |-- config.cfg
-|   `-- rna.fa
+|   |-- config.cfg ## guppy configuration file
+|   `-- rna.fa ## reference sequences
 |
 |-- guppy_megalodon
 |   |-- guppy_megalodon.recipe
