@@ -5,7 +5,7 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
 ## Tabel of Content
 
 <pre>
-./NanoRL/
+./NanoRL/ ## NanoRL root folder
 |-- analysis
 |   |-- datasets
 |   |   `-- canonical & 1ma & 6ma & ac4c & m5c & hm5c & m5u & psi & m1y ## modification groups
@@ -29,20 +29,20 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
 |           `-- basecall.slurm ## test data basecalling with the final iteration model
 |
 |-- reference
-|   |-- config.cfg ## the guppy configuration file using during iterative basecalling
+|   |-- config.cfg ## revised guppy configuration file used during iterative basecalling
 |   `-- rna.fa ## reference sequences
 |
 |-- guppy_megalodon
 |   |-- guppy_megalodon.recipe ## recipe for creating singularity container
 |   `-- guppy_models
-|       `-- rna_r9.4.1_70bps_hac.cfg ## the original guppy configuration file
+|       `-- rna_r9.4.1_70bps_hac.cfg ## original guppy configuration file
 |
 |-- samtools
 |   `-- samtools.recipe
 |
 `-- taiyaki
     |-- taiyaki_models
-    |   |-- mLstm_flipflop.py ## model template
+    |   |-- mLstm_flipflop.py ## guppy model template
     |   `-- r941_rna_minion.checkpoint ## taiyaki RNA model checkpoint
     `-- taiyaki.recipe
 </pre>
