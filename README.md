@@ -10,6 +10,8 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
 
 ## Table of Content
 
+Datasets and scripts used to reproduce our results are provided here:
+
 <pre>
 ./NanoRL/ ## NanoRL root folder
 |-- analysis
