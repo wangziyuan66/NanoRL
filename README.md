@@ -49,4 +49,4 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
 
 ## Citation & Contact
 
-Ziyuan Wang:princezwang@arizona.edu
+Ziyuan Wang: princezwang@arizona.edu
