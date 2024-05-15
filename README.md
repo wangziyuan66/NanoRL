@@ -10,7 +10,7 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
     <img src="https://github.com/wangziyuan66/NanoRL/blob/main/images/overview.png" width="600" height="250">
 </p>
 
-## Diverse Training Data Expands the Representation Space thus Making the Basecaller Generalizable to Novel Modifications
+## Training Data Diversity Yields a Generalizable Basecaller Representation Space
 
 <p align="center">
     <img src="https://github.com/wangziyuan66/NanoRL/blob/main/images/space.png" width="500" height="600">
