@@ -47,3 +47,6 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
     `-- taiyaki.recipe
 </pre>
 
+## Citation & Contact
+
+Ziyuan Wang:princezwang@arizona.edu
