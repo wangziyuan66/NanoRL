@@ -6,7 +6,7 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
 
 ## Graphic Overview
 
-<img src="https://github.com/wangziyuan66/NanoRL/blob/main/images/overview.png" width="400" height="790">
+<img src="https://github.com/wangziyuan66/NanoRL/blob/main/images/overview.png" width="970" height="400">
 
 ## Diverse Training Data Expands the Representation Space thus Making the Basecaller Generalizable to Novel Modifications
 
