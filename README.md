@@ -8,7 +8,7 @@ Accurately basecalling sequence backbones in the presence of nucleotide modifica
 
 ![Overview](https://github.com/wangziyuan66/NanoRL/blob/main/images/overview.png)
 
-## Tabel of Content
+## Table of Content
 
 <pre>
 ./NanoRL/ ## NanoRL root folder
