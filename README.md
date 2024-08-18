@@ -63,6 +63,22 @@ Datasets and scripts used to reproduce our results are provided here:
     `-- taiyaki.recipe
 </pre>
 
+## Miscellaneous
+
+### Taiyaki
+
+Considering **Taiyaki** has been deprecated by Oxford Nanopore Group, we provide a recipe file which could be utiled to create the [singularity sif image]([https://docs.sylabs.io/guides/3.3/user-guide/cli/singularity_sif.html](https://docs.sylabs.io/guides/3.3/user-guide/quick_start.html#overview-of-the-singularity-interface)) or [docker image](https://docs.sylabs.io/guides/2.6/user-guide/singularity_and_docker.html) in taiyaki/taiyaki.recipe.
+
+Here is [How to build the Singularity image](https://docs.sylabs.io/guides/2.6/user-guide/build_a_container.html).
+
+### Bonito
+
+Download in https://github.com/nanoporetech/bonito.
+
+### Dorado
+
+Download in https://github.com/nanoporetech/dorado
+
 ## Citation & Contact
 
 Ziyuan Wang: princezwang@arizona.edu
