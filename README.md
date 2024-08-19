@@ -71,6 +71,8 @@ Considering **Taiyaki** has been deprecated by Oxford Nanopore Group, we provide
 
 Here is [How to build the Singularity image](https://docs.sylabs.io/guides/2.6/user-guide/build_a_container.html).
 
+The builded image can also be downloaded in our [figshare](https://figshare.com/s/6bce33cadffb8bd8b622).
+
 ### Bonito
 
 Download in https://github.com/nanoporetech/bonito.
